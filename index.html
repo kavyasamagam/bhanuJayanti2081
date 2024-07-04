@@ -23,12 +23,18 @@
           container: {
             center: true,
             padding: "4px",
+            
           },
           extend: {
             fontFamily: {
               sans: ["Poppins", "Inter", "sans-serif"],
             },
             colors: {
+              // Adding gradient colors
+        gradient: {
+          start: "#C04848",
+          end: "#480048",
+        },
               primary: "FFF8DB",
               secondary: "#64748b",
               dark: "FFF078",
@@ -41,8 +47,8 @@
       };
     </script>
   </head>
-  <body>
-    <nav class="container 2xl top-o  ">
+  <body >
+    <nav class="container 2xl  ">
         <div class="navbar bg-base-100 text-clifford ">
           
           <div class="navbar-start">
@@ -91,7 +97,8 @@
         </div>
         </div>
     </nav>
-    <div class="container 2xl">
+    <div class="  bg-gradient-to-r from-gradient-start to-gradient-end">
+    <div class="">
       <div
         class="hero"
         id="home"
@@ -115,7 +122,7 @@
               Latest
             </button>
             <dialog id="my_modal_4" class="modal">
-              <div class="modal-box w-11/12 max-w-5xl">
+              <div class="modal-box bg-gradient-to-r w-11/12 max-w-5xl">
                 <h3 class="text-lg font-bold">
                   Welcome to Bhanu Jayanti 2081!!
                 </h3>
@@ -162,12 +169,13 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container 2xl">
-      <h1 class="text-5xl font-bold">Events</h1>
-      <div id="event" class="hero">
-        <div class="hero-content text-center">
-          <div class="hero-content flex-col">
+      <div id="event" class=" flex flex-col container 2xl ">
+        <h1 class=" container 2xl text-5xl font-bold ml-2">   Events</h1>
+
+        <div class="hero-content   text-center ">
+      
+
+            <div class="hero-content flex flex-col items-center justify-center ">
             <ul class="timeline timeline-vertical">
               <li>
                 <div class="timeline-start">10:00 AM</div>
@@ -291,13 +299,16 @@
             </ul>
           </div>
         </div>
-      </div>
+     
     </div>
+    </div>
+    
+     
     <div class="container 2xl">
       <footer class="footer text-neutral-content p-10">
         <aside>
           <p>
-            काव्य समागम .
+            काव्य समागम 
             <br />
             kavyasamagam@ncit.edu.np
           </p>
@@ -348,5 +359,6 @@
         </nav>
       </footer>
     </div>
+  </div>
   </body>
 </html>
