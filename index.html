@@ -1,71 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhanu Jayanti 2081</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Bhanu Jayanti 2081</h1>
-            <p>Celebrating the Birth Anniversary of Adikavi Bhanu Bhakta Acharya</p>
-        </div>
-    </header>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <nav>
-        <div class="container">
-            <ul>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "4px",
+          },
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "FFF8DB",
+              secondary: "#64748b",
+              dark: "FFF078",
+            },
+            screens: {
+              "2xl": "1320px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="container 2xl top-o  ">
+        <div class="navbar bg-base-100 text-clifford ">
+          
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
                 <li><a href="#home">Home</a></li>
+                <li><a href="#event">Event</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">काव्य समागम </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#event">Event</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
+          </div>
+          <div class="navbar-end flrspace-x-3">
+            <div>
+              <button class="btn btn-success">Login</button>
+  
+              <button class="btn btn-outline btn-success">Signup</button>
+            </div>
+          </div>
+        </div>
         </div>
     </nav>
-
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to Bhanu Jayanti 2081</h2>
-            <p>Join us in celebrating the life and works of Bhanu Bhakta Acharya, the first poet of Nepal, known for translating the Ramayana into Nepali.</p>
+    <div class="container 2xl">
+      <div
+        class="hero"
+        id="home"
+        style="
+          background-image: url(https://img.freepik.com/premium-vector/realistic-paper-scroll-feather-quill-pen-ink-bottle_208581-1388.jpg?ga=GA1.1.1753975536.1718606391&semt=sph);
+        "
+      >
+        <div class="hero-overlay bg-opacity-80"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">काव्य समागम</h1>
+            <p class="mb-5">
+              काव्य समागम एक साहित्यिक संग्रह हो जसमा नेपाली भाषामा विभिन्न
+              कविता, कहानीहरू, निबंध र अन्य साहित्यिक कृतिहरूको संग्रह गरिएको छ।
+              यो संग्रह साहित्यिक र भाषाई परम्पराहरूको समृद्धतालाई दर्शाउँदछ र
+              साहित्यिक रचनात्मकताको मंथन गर्ने स्थानको रूपमा प्रस्तुत गरिएको
+              हो।
+            </p>
+            <!-- You can open the modal using ID.showModal() method -->
+            <button class="btn btn-primary" onclick="my_modal_4.showModal()">
+              Latest
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl">
+                <h3 class="text-lg font-bold">
+                  Welcome to Bhanu Jayanti 2081!!
+                </h3>
+                <p class="py-4">
+                  Bhanubhakta Acharya (Nepali: भानुभक्त आचार्य) (1814—1868 CE)
+                  (1871—1925 BS) was a Nepali writer, poet, and translator. He
+                  is widely regarded as the first poet in the Nepali language,
+                  for which he was conferred with the title of "Aadikabi":
+                  literally, "the first poet". He is best known for translating
+                  the epic Ramayana from Sanskrit to Nepali for the first time.
+                  Initially, his translation of the Ramayana was popular in oral
+                  form. It was later compiled and published by Motirām Bhatta in
+                  the late 19th century as Bhanubhakta Ramayana.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
         </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About the Event</h2>
-            <p>Bhanu Jayanti is celebrated every year to honor the contributions of Bhanu Bhakta Acharya to Nepali literature. The event features cultural programs, poetry recitations, and discussions on his works.</p>
+      </div>
+    </div>
+    <div class="container 2xl">
+      <div id="about" class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Bhanubhakta_Acharya.jpg/220px-Bhanubhakta_Acharya.jpg"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold">Welcome to Bhanu Jayanti 2081!</h1>
+            <p class="py-6">
+              He is best known for translating the epic Ramayana from Sanskrit
+              to Nepali for the first time. Initially, his translation of the
+              Ramayana was popular in oral form. It was later compiled and
+              published by Motirām Bhatta in the late 19th century as
+              Bhanubhakta Ramayana.
+            </p>
+            <button class="btn btn-primary">Register Now</button>
+          </div>
         </div>
-    </section>
-
-    <section id="schedule">
-        <div class="container">
-            <h2>Event Schedule</h2>
-            <ul>
-                <li><strong>10:00 AM - Opening Ceremony</strong></li>
-                <li><strong>11:00 AM - Poetry Recitation</strong></li>
-                <li><strong>1:00 PM - Lunch Break</strong></li>
-                <li><strong>2:00 PM - Cultural Programs</strong></li>
-                <li><strong>4:00 PM - Discussion on Bhanu Bhakta's Works</strong></li>
-                <li><strong>6:00 PM - Closing Ceremony</strong></li>
+      </div>
+    </div>
+    <div class="container 2xl">
+      <h1 class="text-5xl font-bold">Events</h1>
+      <div id="event" class="hero">
+        <div class="hero-content text-center">
+          <div class="hero-content flex-col">
+            <ul class="timeline timeline-vertical">
+              <li>
+                <div class="timeline-start">10:00 AM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Opening Ceremony</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">11:00 AM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Poetry Recitation</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">1:00 PM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Lunch Break</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2:00 PM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Cultural Programs</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">4:00 PM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">
+                  Discussion on Bhanu Bhakta's Works
+                </div>
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">6:00 PM</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Closing Ceremony</div>
+              </li>
             </ul>
+          </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need further information, please contact us at:</p>
-            <p>Email: kavyasamagam@ncit.edu.np</p>
-            <p>Phone: +977-123456789</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2081 Bhanu Jayanti. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+      </div>
+    </div>
+    <div class="container 2xl">
+      <footer class="footer text-neutral-content p-10">
+        <aside>
+          <p>
+            काव्य समागम .
+            <br />
+            kavyasamagam@ncit.edu.np
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
