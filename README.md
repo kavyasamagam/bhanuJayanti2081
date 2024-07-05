@@ -22,7 +22,7 @@ Welcome to the Bhanu Jayanti 2081 project! This repository contains the source c
 
 ## Demo
 
-Check out the live demo of the project [here](#).
+Check out the live demo of the project [here](https://kavyasamagam.github.io/bhanuJayanti2081/).
 
 ## Features
 
